@@ -254,7 +254,7 @@ while (walker.nextNode()) {
     )
   )
     continue;
-  const key = node.nodeValue.trim();
+  const key = node.nodeValue.replace(/[ \t\n\r]+/g, " ").trim();
   if (Object.prototype.hasOwnProperty.call(EN, key))
     textBindings.push({ node, original: node.nodeValue, key });
 }
@@ -428,7 +428,9 @@ function setLanguage(next, announce = false) {
   document.documentElement.lang = language;
   for (const { node, original, key } of textBindings) {
     node.nodeValue =
-      language === "es" ? original : original.replace(key, () => EN[key]);
+      language === "es"
+        ? original
+        : original.replace(original.trim(), () => EN[key]);
   }
   for (const { el, attr, value } of attributeBindings)
     el.setAttribute(attr, t(value));
