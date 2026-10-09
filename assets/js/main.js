@@ -1,5 +1,6 @@
 /* Set the full application URL when available; otherwise CTAs open the local demo. */
-const PLATFORM_URL = "";
+const PLATFORM_URL =
+  "https://1asi0729-2620-16692-bitmeisters.github.io/Frontend-Web-Application/";
 const EN = {
   "FleetSafe | Antes de arrancar, ten el control.":
     "FleetSafe | Take control before you hit the road.",
@@ -133,7 +134,7 @@ const EN = {
     "Prevention becomes more than a formality.",
   "Se convierte en parte de tu operación.":
     "It becomes part of your operation.",
-  "Explora un ejemplo ↗": "Explore an example ↗",
+  "Explora un ejemplo": "Explore an example",
   "Cada persona, su perspectiva": "Every person, their perspective",
   "Un mismo control.": "One shared view.",
   "Tres formas de": "Three ways to",
