@@ -1,6 +1,8 @@
 /* Set the full application URL when available; otherwise CTAs open the local demo. */
 const PLATFORM_URL =
   "https://1asi0729-2620-16692-bitmeisters.github.io/Frontend-Web-Application/";
+/* Set the YouTube video id of About the Team to replace its placeholder. */
+const TEAM_VIDEO_ID = "";
 const EN = {
   "FleetSafe | Antes de arrancar, ten el control.":
     "FleetSafe | Take control before you hit the road.",
@@ -159,6 +161,8 @@ const EN = {
   "Un equipo de Ingeniería de Software de la UPC que transforma el control preventivo vehicular en una experiencia digital más clara.":
     "A Software Engineering team from UPC turning preventive vehicle safety management into a clearer digital experience.",
   "Ingeniería de Software": "Software Engineering",
+  "Muy pronto: cómo trabajamos y qué aprendimos construyendo FleetSafe.":
+    "Coming soon: how we work and what we learned building FleetSafe.",
   "Antes de empezar": "Before you start",
   "Menos dudas.": "Fewer questions.",
   "Más claridad.": "More clarity.",
@@ -468,3 +472,12 @@ document
     ),
   );
 setLanguage(language);
+if (/^[\w-]{11}$/.test(TEAM_VIDEO_ID)) {
+  const frame = document.querySelector("[data-team-video]");
+  const video = document.createElement("iframe");
+  video.src = `https://www.youtube-nocookie.com/embed/${TEAM_VIDEO_ID}`;
+  video.title = "About the Team — BitMeisters";
+  video.allow = "encrypted-media; picture-in-picture; fullscreen";
+  video.loading = "lazy";
+  frame.replaceChildren(video);
+}
