@@ -1,7 +1,8 @@
 /* Set the full application URL when available; otherwise CTAs open the local demo. */
 const PLATFORM_URL =
   "https://1asi0729-2620-16692-bitmeisters.github.io/Frontend-Web-Application/";
-/* Set the YouTube video id of About the Team to replace its placeholder. */
+/* Set the YouTube video ids of About the Product and About the Team to replace their placeholders. */
+const PRODUCT_VIDEO_ID = "";
 const TEAM_VIDEO_ID = "";
 const EN = {
   "FleetSafe | Antes de arrancar, ten el control.":
@@ -161,6 +162,8 @@ const EN = {
   "Un equipo de Ingeniería de Software de la UPC que transforma el control preventivo vehicular en una experiencia digital más clara.":
     "A Software Engineering team from UPC turning preventive vehicle safety management into a clearer digital experience.",
   "Ingeniería de Software": "Software Engineering",
+  "Muy pronto: FleetSafe en acción, de la inspección al cierre de la incidencia.":
+    "Coming soon: FleetSafe in action, from the inspection to the closing of the incident.",
   "Muy pronto: cómo trabajamos y qué aprendimos construyendo FleetSafe.":
     "Coming soon: how we work and what we learned building FleetSafe.",
   "Antes de empezar": "Before you start",
@@ -472,12 +475,15 @@ document
     ),
   );
 setLanguage(language);
-if (/^[\w-]{11}$/.test(TEAM_VIDEO_ID)) {
-  const frame = document.querySelector("[data-team-video]");
+for (const [name, id, title] of [
+  ["product", PRODUCT_VIDEO_ID, "About the Product — FleetSafe"],
+  ["team", TEAM_VIDEO_ID, "About the Team — BitMeisters"],
+]) {
+  if (!/^[\w-]{11}$/.test(id)) continue;
   const video = document.createElement("iframe");
-  video.src = `https://www.youtube-nocookie.com/embed/${TEAM_VIDEO_ID}`;
-  video.title = "About the Team — BitMeisters";
+  video.src = `https://www.youtube-nocookie.com/embed/${id}`;
+  video.title = title;
   video.allow = "encrypted-media; picture-in-picture; fullscreen";
   video.loading = "lazy";
-  frame.replaceChildren(video);
+  document.querySelector(`[data-video="${name}"]`).replaceChildren(video);
 }
