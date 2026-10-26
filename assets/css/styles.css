@@ -4,6 +4,7 @@
   --muted: #5b6863;
   --line: #d8dcd3;
   --orange: #dd471a;
+  --orange-text: #c43d17;
   --lime: #d5ed99;
   --dark: #142b28;
   --white: #fff;
@@ -115,7 +116,7 @@ summary:focus-visible {
   justify-content: center;
   gap: 25px;
   border: 1px solid transparent;
-  background: var(--orange);
+  background: var(--orange-text);
   color: white;
   padding: 18px 24px;
   font-size: 14px;
@@ -126,7 +127,7 @@ summary:focus-visible {
     transform 0.2s;
 }
 .btn:hover {
-  background: #bf3811;
+  background: #a93412;
   transform: translateY(-2px);
 }
 .btn.small {
@@ -227,8 +228,7 @@ summary:focus-visible {
 .art-grid {
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(#ffffff07 1px, transparent 1px),
+  background-image: linear-gradient(#ffffff07 1px, transparent 1px),
     linear-gradient(90deg, #ffffff07 1px, transparent 1px);
   background-size: 35px 35px;
 }
@@ -259,7 +259,7 @@ summary:focus-visible {
   font-size: 26px;
   letter-spacing: -1px;
 }
-.art-title span {
+.art-title span:not(.i18n) {
   color: #abc2b7;
 }
 .truck {
@@ -369,9 +369,9 @@ summary:focus-visible {
 .hero-bottom div:last-child {
   border: 0;
 }
-.hero-bottom span {
+.hero-bottom span:not(.i18n) {
   font: 11px monospace;
-  color: var(--orange);
+  color: var(--orange-text);
 }
 .section {
   padding: 105px 0;
@@ -414,7 +414,7 @@ h2 .muted {
 }
 .number {
   font: 12px monospace;
-  color: var(--orange);
+  color: var(--orange-text);
 }
 h3 {
   font-size: 21px;
@@ -1330,7 +1330,7 @@ dialog::backdrop {
     font-size: 8px;
     gap: 15px;
   }
-  .demo-foot span:last-child {
+  .demo-foot span:not(.i18n):last-child {
     display: none;
   }
   .features-grid {
@@ -1463,7 +1463,7 @@ dialog::backdrop {
   letter-spacing: -1.3px;
   margin: 24px 0 20px;
 }
-.road-story h3 span {
+.road-story h3 span:not(.i18n) {
   color: var(--lime);
 }
 .road-story p {
