@@ -1,31 +1,42 @@
-<!doctype html> 
-<html lang="es">
+<!doctype html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#f5f3ed" />
     <meta
       name="description"
-      content="FleetSafe centraliza las inspecciones, evalúa riesgos y permite verificar la habilitación de tu flota de carga antes de cada salida."
+      content="FleetSafe centralizes inspections, assesses risks, and lets you check your freight fleet’s clearance before every departure."
+      data-i18n-content="meta.fleetsafe-centralizes-inspections-assesses-risks-and"
     />
     <meta
       property="og:title"
-      content="FleetSafe — La seguridad empieza antes de arrancar."
+      content="FleetSafe — Safety starts before you hit the road."
+      data-i18n-content="meta.fleetsafe-safety-starts-before-you-hit"
     />
     <meta
       property="og:description"
-      content="Inspecciones digitales, evaluación por reglas y seguimiento de incidencias para tu flota de carga."
+      content="Digital inspections, rule-based assessments, and issue tracking for your freight fleet."
+      data-i18n-content="meta.digital-inspections-rule-based-assessments-and"
     />
     <meta property="og:type" content="website" />
-    <title>FleetSafe | Antes de arrancar, ten el control.</title>
+    <title data-i18n="meta.fleetsafe-take-control-before-you-hit">
+      FleetSafe | Take control before you hit the road.
+    </title>
     <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <a class="skip" href="#main">Saltar al contenido</a>
+    <a class="skip" href="#main" data-i18n="page.skip-to-content"
+      >Skip to content</a
+    >
     <header class="nav">
       <div class="wrap nav-inner">
-        <a class="logo" href="#" aria-label="FleetSafe, inicio"
+        <a
+          class="logo"
+          href="#"
+          aria-label="FleetSafe, home"
+          data-i18n-aria-label="header.fleetsafe-home"
           ><span class="logo-mark" aria-hidden="true">F</span>FleetSafe<span
             style="color: var(--orange)"
             >.</span
@@ -34,38 +45,45 @@
         <nav
           class="nav-links"
           id="navigation"
-          aria-label="Navegación principal"
+          aria-label="Main navigation"
+          data-i18n-aria-label="navigation.main-navigation"
         >
-          <a href="#features">La plataforma</a
-          ><a href="#how-it-works">Cómo funciona</a
-          ><a href="#team">Nuestro equipo</a>
+          <a href="#features" data-i18n="navigation.the-platform"
+            >The platform</a
+          ><a href="#how-it-works" data-i18n="navigation.how-it-works"
+            >How it works</a
+          ><a href="#team" data-i18n="navigation.our-team">Our team</a>
         </nav>
         <div class="nav-actions">
           <div
             class="language-switch"
             role="group"
-            aria-label="Seleccionar idioma"
+            aria-label="Select language"
+            data-i18n-aria-label="header.select-language"
           >
             <button
               type="button"
-              data-language="es"
-              lang="es"
+              data-language="es-419"
+              lang="es-419"
               aria-label="Español"
-              aria-pressed="true"
+              aria-pressed="false"
             >
               ES</button
             ><button
               type="button"
-              data-language="en"
-              lang="en"
+              data-language="en-US"
+              lang="en-US"
               aria-label="English"
-              aria-pressed="false"
+              aria-pressed="true"
             >
               EN
             </button>
           </div>
-          <a class="btn small" data-app-link href="#demo"
-            >Explorar demo <span class="arrow" aria-hidden="true">↗</span></a
+          <a class="btn small" data-app-link="" href="#demo"
+            ><span class="i18n" data-i18n="header.explore-demo"
+              >Explore demo</span
+            >
+            <span class="arrow" aria-hidden="true">↗</span></a
           >
         </div>
         <button
@@ -73,9 +91,11 @@
           type="button"
           aria-expanded="false"
           aria-controls="navigation"
-          aria-label="Abrir menú"
+          aria-label="Open menu"
+          data-i18n="header.menu"
+          data-i18n-aria-label="header.open-menu"
         >
-          Menú
+          Menu
         </button>
       </div>
     </header>
@@ -90,37 +110,66 @@
         <div class="wrap">
           <div class="hero-grid">
             <div class="reveal">
-              <div class="eyebrow">Control preventivo para flotas de carga</div>
+              <div
+                class="eyebrow"
+                data-i18n="main.preventive-safety-for-freight-fleets"
+              >
+                Preventive safety for freight fleets
+              </div>
               <h1>
-                La seguridad<br />empieza <em>antes<br />de arrancar.</em>
+                <span class="i18n" data-i18n="main.safety">Safety</span
+                ><br /><span class="i18n" data-i18n="main.starts">starts</span>
+                <em
+                  ><span class="i18n" data-i18n="main.before">before</span
+                  ><br /><span class="i18n" data-i18n="main.you-hit-the-road"
+                    >you hit the road.</span
+                  ></em
+                >
               </h1>
-              <p class="lead">
-                Conoce qué vehículos están listos para salir. Inspecciona,
-                detecta riesgos y verifica cada habilitación desde un solo
-                lugar.
+              <p class="lead" data-i18n="main.know-which-vehicles-are-ready-to">
+                Know which vehicles are ready to go. Inspect, identify risks,
+                and check every vehicle’s clearance in one place.
               </p>
               <div class="hero-actions">
-                <a class="btn" data-app-link href="#demo"
-                  >Explorar la plataforma
+                <a class="btn" data-app-link="" href="#demo"
+                  ><span class="i18n" data-i18n="main.explore-the-platform"
+                    >Explore the platform</span
+                  >
                   <span class="arrow" aria-hidden="true">↗</span></a
-                ><a class="text-link" href="#how-it-works">Así funciona ↓</a>
+                ><a
+                  class="text-link"
+                  href="#how-it-works"
+                  data-i18n="main.how-it-works"
+                  >How it works ↓</a
+                >
               </div>
-              <p class="micro">
-                Del checklist del conductor a la decisión del supervisor.
+              <p class="micro" data-i18n="main.from-the-driver-s-checklist-to">
+                From the driver’s checklist to the supervisor’s decision.
               </p>
             </div>
             <div
               class="hero-art reveal"
               role="img"
-              aria-label="Ilustración de un camión de carga con una inspección aprobada. Vista conceptual de FleetSafe."
+              aria-label="Illustration of a freight truck with an approved inspection. FleetSafe concept view."
+              data-i18n-aria-label="main.illustration-of-a-freight-truck-with"
             >
               <div class="art-grid"></div>
               <div class="art-top">
-                <span>FLEETSAFE / CONTROL OPERATIVO</span
-                ><span><i class="live-dot"></i>VISTA CONCEPTUAL</span>
+                <span data-i18n="main.fleetsafe-operations-control"
+                  >FLEETSAFE / OPERATIONS CONTROL</span
+                ><span
+                  ><i class="live-dot"></i
+                  ><span class="i18n" data-i18n="main.concept-view"
+                    >CONCEPT VIEW</span
+                  ></span
+                >
               </div>
               <div class="art-title">
-                Cada salida.<br /><span>Una decisión informada.</span>
+                <span class="i18n" data-i18n="main.every-departure"
+                  >Every departure.</span
+                ><br /><span data-i18n="main.an-informed-decision"
+                  >An informed decision.</span
+                >
               </div>
               <span class="cross one">+</span><span class="cross two">+</span>
               <svg
@@ -138,8 +187,8 @@
                     y2="250"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#f2f1e7" />
-                    <stop offset="1" stop-color="#a1b4aa" />
+                    <stop stop-color="#f2f1e7"></stop>
+                    <stop offset="1" stop-color="#a1b4aa"></stop>
                   </linearGradient>
                   <linearGradient
                     id="cab"
@@ -149,20 +198,20 @@
                     y2="280"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#faf9ee" />
-                    <stop offset="1" stop-color="#b5c2b6" />
+                    <stop stop-color="#faf9ee"></stop>
+                    <stop offset="1" stop-color="#b5c2b6"></stop>
                   </linearGradient>
                 </defs>
                 <path
                   d="M48 265L347 326L606 181M53 299L206 332M377 291L608 162"
                   stroke="#506c5d"
                   stroke-width="1"
-                />
+                ></path>
                 <path
                   d="M122 277L321 319L572 184"
                   stroke="#9daf72"
                   stroke-dasharray="12 12"
-                />
+                ></path>
                 <ellipse
                   cx="328"
                   cy="268"
@@ -171,24 +220,35 @@
                   fill="#0a201b"
                   opacity=".5"
                   transform="rotate(-13 328 268)"
-                />
-                <path d="M240 81L466 29L550 69L331 129Z" fill="#f1f2e7" />
-                <path d="M331 129L550 69V204L331 263Z" fill="url(#trailer)" />
-                <path d="M240 81L331 129V263L240 220Z" fill="#7e9689" />
+                ></ellipse>
+                <path d="M240 81L466 29L550 69L331 129Z" fill="#f1f2e7"></path>
+                <path
+                  d="M331 129L550 69V204L331 263Z"
+                  fill="url(#trailer)"
+                ></path>
+                <path d="M240 81L331 129V263L240 220Z" fill="#7e9689"></path>
                 <path
                   d="M349 132L349 247M366 128V243M383 124V238M400 119V234M417 115V229M434 110V225M451 106V220M468 102V216M485 97V211M502 93V207M519 88V202M536 84V198"
                   stroke="#819b8b"
                   opacity=".45"
                   stroke-width="2"
-                />
-                <path d="M334 242L551 185V203L334 261Z" fill="#ec6a3b" />
+                ></path>
+                <path d="M334 242L551 185V203L334 261Z" fill="#ec6a3b"></path>
                 <path
                   d="M377 157L479 130V147L377 174Z"
                   fill="#435e50"
                   opacity=".55"
-                />
-                <path d="M388 183L465 163" stroke="#6f8a79" stroke-width="2" />
-                <path d="M333 262L544 207" stroke="#172b24" stroke-width="11" />
+                ></path>
+                <path
+                  d="M388 183L465 163"
+                  stroke="#6f8a79"
+                  stroke-width="2"
+                ></path>
+                <path
+                  d="M333 262L544 207"
+                  stroke="#172b24"
+                  stroke-width="11"
+                ></path>
                 <g fill="#10201b" stroke="#637b6a" stroke-width="3">
                   <ellipse
                     cx="500"
@@ -196,21 +256,21 @@
                     rx="17"
                     ry="25"
                     transform="rotate(14 500 229)"
-                  />
+                  ></ellipse>
                   <ellipse
                     cx="466"
                     cy="238"
                     rx="17"
                     ry="25"
                     transform="rotate(14 466 238)"
-                  />
+                  ></ellipse>
                   <ellipse
                     cx="311"
                     cy="278"
                     rx="18"
                     ry="26"
                     transform="rotate(12 311 278)"
-                  />
+                  ></ellipse>
                 </g>
                 <g fill="#9cad98">
                   <ellipse
@@ -219,50 +279,72 @@
                     rx="7"
                     ry="13"
                     transform="rotate(14 503 229)"
-                  />
+                  ></ellipse>
                   <ellipse
                     cx="469"
                     cy="238"
                     rx="7"
                     ry="13"
                     transform="rotate(14 469 238)"
-                  />
+                  ></ellipse>
                   <ellipse
                     cx="314"
                     cy="278"
                     rx="7"
                     ry="13"
                     transform="rotate(12 314 278)"
-                  />
+                  ></ellipse>
                 </g>
-                <path d="M126 163L219 134L286 164L195 198Z" fill="#eceee3" />
+                <path
+                  d="M126 163L219 134L286 164L195 198Z"
+                  fill="#eceee3"
+                ></path>
                 <path
                   d="M126 163L195 198L195 297L118 262V204Z"
                   fill="url(#cab)"
-                />
+                ></path>
                 <path
                   d="M195 198L286 164L297 262L270 273Q251 243 237 282L195 297Z"
                   fill="#d7dfd0"
-                />
-                <path d="M132 178L188 206V242L126 216Z" fill="#1e3c3a" />
-                <path d="M204 205L271 182L276 214L204 242Z" fill="#244542" />
-                <path d="M211 208L265 190" stroke="#5b8072" stroke-width="3" />
-                <path d="M131 181L181 207" stroke="#74917f" stroke-width="3" />
-                <path d="M124 229L188 257V282L121 252Z" fill="#35483d" />
+                ></path>
+                <path d="M132 178L188 206V242L126 216Z" fill="#1e3c3a"></path>
+                <path
+                  d="M204 205L271 182L276 214L204 242Z"
+                  fill="#244542"
+                ></path>
+                <path
+                  d="M211 208L265 190"
+                  stroke="#5b8072"
+                  stroke-width="3"
+                ></path>
+                <path
+                  d="M131 181L181 207"
+                  stroke="#74917f"
+                  stroke-width="3"
+                ></path>
+                <path d="M124 229L188 257V282L121 252Z" fill="#35483d"></path>
                 <path
                   d="M130 237L181 259M128 244L181 266M127 251L181 273"
                   stroke="#879780"
                   stroke-width="2"
-                />
-                <path d="M202 249L287 222" stroke="#dc542a" stroke-width="9" />
-                <path d="M118 262L195 297V309L116 275Z" fill="#758675" />
-                <path d="M200 295L233 284V295L200 307Z" fill="#516851" />
+                ></path>
+                <path
+                  d="M202 249L287 222"
+                  stroke="#dc542a"
+                  stroke-width="9"
+                ></path>
+                <path d="M118 262L195 297V309L116 275Z" fill="#758675"></path>
+                <path d="M200 295L233 284V295L200 307Z" fill="#516851"></path>
                 <path
                   d="M125 259L144 266V274L125 266M172 280L189 286V294L172 287"
                   fill="#fff2bd"
-                />
-                <path d="M221 243V276M276 230L280 251" stroke="#92a58f" />
-                <path d="M228 243L240 239" stroke="#526c59" stroke-width="3" />
+                ></path>
+                <path d="M221 243V276M276 230L280 251" stroke="#92a58f"></path>
+                <path
+                  d="M228 243L240 239"
+                  stroke="#526c59"
+                  stroke-width="3"
+                ></path>
                 <ellipse
                   cx="258"
                   cy="281"
@@ -272,7 +354,7 @@
                   stroke="#60765f"
                   stroke-width="3"
                   transform="rotate(14 258 281)"
-                />
+                ></ellipse>
                 <ellipse
                   cx="261"
                   cy="281"
@@ -280,82 +362,156 @@
                   ry="14"
                   fill="#acbba0"
                   transform="rotate(14 261 281)"
-                />
+                ></ellipse>
                 <path
                   d="M193 208L197 203L200 229M122 186L112 190V207"
                   stroke="#a6b7a0"
                   stroke-width="4"
-                />
+                ></path>
                 <path
                   d="M119 140L216 114L276 143L284 162L219 134L126 163Z"
                   fill="#e8ebe1"
-                />
-                <path d="M119 140L126 163L219 134L216 114Z" fill="#bdcbbb" />
-                <path d="M142 146L200 130" stroke="#688471" stroke-width="3" />
+                ></path>
+                <path
+                  d="M119 140L126 163L219 134L216 114Z"
+                  fill="#bdcbbb"
+                ></path>
+                <path
+                  d="M142 146L200 130"
+                  stroke="#688471"
+                  stroke-width="3"
+                ></path>
               </svg>
-              <div class="vehicle-tag">UNIDAD / FS-024</div>
+              <div class="vehicle-tag" data-i18n="main.vehicle-fs-024">
+                VEHICLE / FS-024
+              </div>
               <div class="status-float">
                 <span class="check-icon">✓</span>
                 <div>
-                  <strong>Todo listo para la siguiente ruta.</strong>
-                  <p>Inspección aprobada · Vehículo habilitado</p>
+                  <strong data-i18n="main.ready-for-the-next-journey"
+                    >Ready for the next journey.</strong
+                  >
+                  <p data-i18n="main.inspection-passed-vehicle-cleared">
+                    Inspection passed · Vehicle cleared
+                  </p>
                 </div>
-                <span class="code">FS / 024<br />PRE-SALIDA</span>
+                <span class="code"
+                  >FS / 024<br /><span
+                    class="i18n"
+                    data-i18n="main.pre-departure"
+                    >PRE-DEPARTURE</span
+                  ></span
+                >
               </div>
               <div class="art-foot">
-                <span>INSPECCIONAR → EVALUAR → HABILITAR</span
+                <span data-i18n="main.inspect-assess-clear"
+                  >INSPECT → ASSESS → CLEAR</span
                 ><span>01 / 03</span>
               </div>
             </div>
           </div>
           <div class="hero-bottom">
-            <div><span>01 /</span> Inspecciones sin papel</div>
-            <div><span>02 /</span> Evaluación con tus reglas</div>
-            <div><span>03 /</span> Trazabilidad por vehículo</div>
+            <div>
+              <span>01 /</span>
+              <span class="i18n" data-i18n="main.paperless-inspections"
+                >Paperless inspections</span
+              >
+            </div>
+            <div>
+              <span>02 /</span>
+              <span class="i18n" data-i18n="main.assessment-using-your-rules"
+                >Assessment using your rules</span
+              >
+            </div>
+            <div>
+              <span>03 /</span>
+              <span class="i18n" data-i18n="main.traceability-for-every-vehicle"
+                >Traceability for every vehicle</span
+              >
+            </div>
           </div>
         </div>
       </section>
       <section class="section" id="problem">
         <div class="wrap">
-          <div class="eyebrow">Lo que no ves también viaja contigo</div>
+          <div class="eyebrow" data-i18n="problem.unseen-risks-travel-with-you">
+            Unseen risks travel with you
+          </div>
           <div class="section-head">
             <h2>
-              Tu carga tiene un destino.<br /><span class="muted"
-                >Los riesgos, un punto de partida.</span
+              <span
+                class="i18n"
+                data-i18n="problem.your-cargo-has-a-destination"
+                >Your cargo has a destination.</span
+              ><br /><span
+                class="muted"
+                data-i18n="problem.risks-have-a-starting-point"
+                >Risks have a starting point.</span
               >
             </h2>
-            <p>
-              Una observación en papel. Un documento vencido. Una autorización
-              pendiente. La falta de visibilidad empieza antes de salir.
+            <p data-i18n="problem.a-note-on-paper-an-expired">
+              A note on paper. An expired document. A pending clearance. Limited
+              visibility starts before departure.
             </p>
           </div>
           <div class="problems">
             <article class="problem">
-              <span class="number">01 / INFORMACIÓN DISPERSA</span>
-              <h3>El papel no cuenta toda la historia.</h3>
-              <p>
-                Entre formatos físicos y hojas de cálculo, conocer el estado de
-                una unidad exige buscar en demasiados lugares.
+              <span class="number" data-i18n="problem.01-scattered-information"
+                >01 / SCATTERED INFORMATION</span
+              >
+              <h3 data-i18n="problem.paper-doesn-t-tell-the-whole">
+                Paper doesn’t tell the whole story.
+              </h3>
+              <p
+                data-i18n="problem.between-paper-forms-and-spreadsheets-understanding"
+              >
+                Between paper forms and spreadsheets, understanding a vehicle’s
+                condition means searching in too many places.
               </p>
-              <p class="outcome">→ Un historial centralizado por vehículo.</p>
+              <p
+                class="outcome"
+                data-i18n="problem.one-centralized-history-for-every-vehicle"
+              >
+                → One centralized history for every vehicle.
+              </p>
             </article>
             <article class="problem">
-              <span class="number">02 / RIESGOS SIN DETECTAR</span>
-              <h3>Una falla no debería sorprenderte.</h3>
-              <p>
-                Los problemas críticos y documentos vencidos pueden pasar
-                desapercibidos si cada revisión depende del seguimiento manual.
+              <span class="number" data-i18n="problem.02-undetected-risks"
+                >02 / UNDETECTED RISKS</span
+              >
+              <h3 data-i18n="problem.a-fault-shouldn-t-catch-you">
+                A fault shouldn’t catch you off guard.
+              </h3>
+              <p data-i18n="problem.critical-issues-and-expired-documents-can">
+                Critical issues and expired documents can go unnoticed when
+                every check relies on manual follow-up.
               </p>
-              <p class="outcome">→ Evaluaciones y alertas preventivas.</p>
+              <p
+                class="outcome"
+                data-i18n="problem.preventive-assessments-and-alerts"
+              >
+                → Preventive assessments and alerts.
+              </p>
             </article>
             <article class="problem">
-              <span class="number">03 / DECISIONES EN ESPERA</span>
-              <h3>La operación no puede adivinar.</h3>
-              <p>
-                Sin información compartida, el conductor espera y el supervisor
-                decide sin tener el panorama completo.
+              <span class="number" data-i18n="problem.03-delayed-decisions"
+                >03 / DELAYED DECISIONS</span
+              >
+              <h3 data-i18n="problem.operations-can-t-run-on-guesswork">
+                Operations can’t run on guesswork.
+              </h3>
+              <p
+                data-i18n="problem.without-shared-information-drivers-wait-and"
+              >
+                Without shared information, drivers wait and supervisors make
+                decisions without the full picture.
               </p>
-              <p class="outcome">→ Un estado claro antes de cada salida.</p>
+              <p
+                class="outcome"
+                data-i18n="problem.a-clear-status-before-every-departure"
+              >
+                → A clear status before every departure.
+              </p>
             </article>
           </div>
           <figure class="road-story">
@@ -364,20 +520,30 @@
               src="./assets/images/photos/truck-on-road.webp"
               width="1200"
               height="800"
-              alt="Camión de carga recorriendo una carretera"
+              alt="Freight truck traveling along a road"
               loading="lazy"
               decoding="async"
+              data-i18n-alt="problem.freight-truck-traveling-along-a-road"
             />
             <figcaption>
-              <div class="eyebrow">La prevención sigue contigo</div>
+              <div
+                class="eyebrow"
+                data-i18n="problem.prevention-travels-with-you"
+              >
+                Prevention travels with you
+              </div>
               <h3>
-                El camino es largo.<br /><span
-                  >La tranquilidad empieza aquí.</span
+                <span class="i18n" data-i18n="problem.the-road-is-long"
+                  >The road is long.</span
+                ><br /><span data-i18n="problem.peace-of-mind-starts-here"
+                  >Peace of mind starts here.</span
                 >
               </h3>
-              <p>
-                Una inspección clara antes de salir. Información disponible
-                durante toda la operación.
+              <p
+                data-i18n="problem.a-clear-inspection-before-departure-information"
+              >
+                A clear inspection before departure. Information available
+                throughout your operation.
               </p>
             </figcaption>
           </figure>
@@ -385,15 +551,28 @@
       </section>
       <section class="section product-section" id="features">
         <div class="wrap">
-          <div class="eyebrow">Una plataforma. El panorama completo.</div>
+          <div
+            class="eyebrow"
+            data-i18n="features.one-platform-the-full-picture"
+          >
+            One platform. The full picture.
+          </div>
           <div class="section-head">
             <h2>
-              De «¿está todo bien?»<br />a
-              <span style="color: var(--green)">tenerlo bajo control.</span>
+              <span class="i18n" data-i18n="features.from-is-everything-okay"
+                >From “is everything okay?”</span
+              ><br /><span class="i18n" data-i18n="features.to">to</span>
+              <span
+                style="color: var(--green)"
+                data-i18n="features.having-it-under-control"
+                >having it under control.</span
+              >
             </h2>
-            <p>
-              Consulta inspecciones, identifica lo que necesita atención y
-              revisa qué unidades están habilitadas para operar.
+            <p
+              data-i18n="features.review-inspections-identify-what-needs-attention"
+            >
+              Review inspections, identify what needs attention, and see which
+              vehicles are cleared to operate.
             </p>
           </div>
           <div class="demo-shell" id="demo">
@@ -401,118 +580,187 @@
               <div class="window-dots" aria-hidden="true">
                 <i></i><i></i><i></i>
               </div>
-              <span class="demo-label">FLEETSAFE / CENTRO DE CONTROL</span
+              <span class="demo-label" data-i18n="demo.fleetsafe-control-center"
+                >FLEETSAFE / CONTROL CENTER</span
               ><span class="demo-label">DEMO</span>
             </div>
             <div class="demo-body">
               <aside
                 class="demo-sidebar"
-                aria-label="Vista conceptual del menú del producto"
+                aria-label="Concept view of the product menu"
+                data-i18n-aria-label="demo.concept-view-of-the-product-menu"
               >
                 <span class="logo"
                   ><span class="logo-mark">F</span>FleetSafe.</span
                 >
-                <div class="side-item selected">▦ &nbsp; Resumen de flota</div>
-                <div class="side-item">▤ &nbsp; Inspecciones</div>
-                <div class="side-item">△ &nbsp; Incidencias</div>
-                <div class="side-item">◎ &nbsp; Vehículos</div>
+                <div class="side-item selected" data-i18n="demo.fleet-overview">
+                  ▦ &nbsp; Fleet overview
+                </div>
+                <div class="side-item" data-i18n="demo.inspections">
+                  ▤ &nbsp; Inspections
+                </div>
+                <div class="side-item" data-i18n="demo.issues">
+                  △ &nbsp; Issues
+                </div>
+                <div class="side-item" data-i18n="demo.vehicles">
+                  ◎ &nbsp; Vehicles
+                </div>
                 <div class="side-note">
-                  PREVENIR ES PARTE<br />DEL RECORRIDO.<br /><br />BITMEISTERS ©
-                  2026
+                  <span class="i18n" data-i18n="demo.prevention-is-part"
+                    >PREVENTION IS PART</span
+                  ><br /><span class="i18n" data-i18n="demo.of-the-journey"
+                    >OF THE JOURNEY.</span
+                  ><br /><br />BITMEISTERS © 2026
                 </div>
               </aside>
               <div class="demo-main">
                 <div class="demo-main-head">
                   <div>
-                    <h3>Tu flota, a la vista.</h3>
-                    <p>Revisa el estado preventivo de cada unidad.</p>
+                    <h3 data-i18n="demo.your-fleet-at-a-glance">
+                      Your fleet at a glance.
+                    </h3>
+                    <p data-i18n="demo.check-the-safety-status-of-every">
+                      Check the safety status of every vehicle.
+                    </p>
                   </div>
-                  <span class="sample-pill">DATOS DE EJEMPLO</span>
+                  <span class="sample-pill" data-i18n="demo.sample-data"
+                    >SAMPLE DATA</span
+                  >
                 </div>
                 <div
                   class="filters"
                   role="group"
-                  aria-label="Filtrar vehículos por estado"
+                  aria-label="Filter vehicles by status"
+                  data-i18n-aria-label="demo.filter-vehicles-by-status"
                 >
-                  <button class="filter" data-filter="all" aria-pressed="true">
-                    Todos · 3</button
-                  ><button class="filter" data-filter="ok" aria-pressed="false">
-                    Habilitados · 1</button
+                  <button
+                    class="filter"
+                    data-filter="all"
+                    aria-pressed="true"
+                    data-i18n="demo.all-3"
+                  >
+                    All · 3</button
+                  ><button
+                    class="filter"
+                    data-filter="ok"
+                    aria-pressed="false"
+                    data-i18n="demo.cleared-1"
+                  >
+                    Cleared · 1</button
                   ><button
                     class="filter"
                     data-filter="warn"
                     aria-pressed="false"
+                    data-i18n="demo.flagged-1"
                   >
-                    Observados · 1</button
+                    Flagged · 1</button
                   ><button
                     class="filter"
                     data-filter="stop"
                     aria-pressed="false"
+                    data-i18n="demo.not-cleared-1"
                   >
-                    No habilitados · 1
+                    Not cleared · 1
                   </button>
                 </div>
                 <div
                   class="table-scroll"
                   tabindex="0"
                   role="region"
-                  aria-label="Vehículos de ejemplo"
+                  aria-label="Sample vehicles"
+                  data-i18n-aria-label="demo.sample-vehicles"
                 >
                   <table>
                     <thead>
                       <tr>
-                        <th scope="col">Vehículo</th>
-                        <th scope="col">Última inspección</th>
-                        <th scope="col">Estado</th>
-                        <th scope="col"><span class="micro">Detalle</span></th>
+                        <th scope="col" data-i18n="demo.vehicle">Vehicle</th>
+                        <th scope="col" data-i18n="demo.latest-inspection">
+                          Latest inspection
+                        </th>
+                        <th scope="col" data-i18n="demo.status">Status</th>
+                        <th scope="col">
+                          <span class="micro" data-i18n="demo.details"
+                            >Details</span
+                          >
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr data-status="ok">
                         <td class="plate">
-                          FS-024<span class="unit-name">Tractocamión</span>
+                          FS-024<span
+                            class="unit-name"
+                            data-i18n="demo.tractor-unit"
+                            >Tractor unit</span
+                          >
                         </td>
-                        <td>Hoy, 07:42</td>
-                        <td><span class="badge">Habilitado</span></td>
+                        <td data-i18n="demo.today-07-42">Today, 07:42</td>
+                        <td>
+                          <span class="badge" data-i18n="demo.cleared"
+                            >Cleared</span
+                          >
+                        </td>
                         <td>
                           <button
                             class="row-button"
                             data-detail="ok"
-                            aria-label="Ver inspección de FS-024"
+                            aria-label="View inspection for FS-024"
+                            data-i18n="demo.view"
+                            data-i18n-aria-label="demo.view-inspection-for-fs-024"
                           >
-                            Ver ↗
+                            View ↗
                           </button>
                         </td>
                       </tr>
                       <tr data-status="warn">
                         <td class="plate">
-                          FS-018<span class="unit-name">Camión de carga</span>
+                          FS-018<span
+                            class="unit-name"
+                            data-i18n="demo.freight-truck"
+                            >Freight truck</span
+                          >
                         </td>
-                        <td>Hoy, 07:35</td>
-                        <td><span class="badge warn">Observado</span></td>
+                        <td data-i18n="demo.today-07-35">Today, 07:35</td>
+                        <td>
+                          <span class="badge warn" data-i18n="demo.flagged"
+                            >Flagged</span
+                          >
+                        </td>
                         <td>
                           <button
                             class="row-button"
                             data-detail="warn"
-                            aria-label="Ver inspección de FS-018"
+                            aria-label="View inspection for FS-018"
+                            data-i18n="demo.view"
+                            data-i18n-aria-label="demo.view-inspection-for-fs-018"
                           >
-                            Ver ↗
+                            View ↗
                           </button>
                         </td>
                       </tr>
                       <tr data-status="stop">
                         <td class="plate">
-                          FS-032<span class="unit-name">Tractocamión</span>
+                          FS-032<span
+                            class="unit-name"
+                            data-i18n="demo.tractor-unit"
+                            >Tractor unit</span
+                          >
                         </td>
-                        <td>Hoy, 07:21</td>
-                        <td><span class="badge stop">No habilitado</span></td>
+                        <td data-i18n="demo.today-07-21">Today, 07:21</td>
+                        <td>
+                          <span class="badge stop" data-i18n="demo.not-cleared"
+                            >Not cleared</span
+                          >
+                        </td>
                         <td>
                           <button
                             class="row-button"
                             data-detail="stop"
-                            aria-label="Ver inspección de FS-032"
+                            aria-label="View inspection for FS-032"
+                            data-i18n="demo.view"
+                            data-i18n-aria-label="demo.view-inspection-for-fs-032"
                           >
-                            Ver ↗
+                            View ↗
                           </button>
                         </td>
                       </tr>
@@ -520,54 +768,71 @@
                   </table>
                 </div>
                 <div class="demo-foot">
-                  <span id="result-count" role="status"
-                    >3 unidades de ejemplo</span
-                  ><span>INSPECCIÓN → EVALUACIÓN → ESTADO</span>
+                  <span
+                    id="result-count"
+                    role="status"
+                    data-i18n="result-count.3-sample-vehicles"
+                    >3 sample vehicles</span
+                  ><span data-i18n="demo.inspection-assessment-status"
+                    >INSPECTION → ASSESSMENT → STATUS</span
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <p class="demo-note">
-            Prueba los filtros y abre una inspección. Demostración ilustrativa;
-            no representa una flota real.
+          <p class="demo-note" data-i18n="features.try-the-filters-and-open-an">
+            Try the filters and open an inspection. This illustrative demo does
+            not represent a real fleet.
           </p>
           <div class="features-grid">
             <article class="feature-copy">
               <span class="feature-symbol" aria-hidden="true">▤</span>
-              <h3>Inspecciona desde el dispositivo.</h3>
-              <p>
-                Registra componentes, elementos de seguridad y documentos. Añade
-                evidencia fotográfica y observaciones antes de arrancar.
+              <h3 data-i18n="features.inspect-from-your-device">
+                Inspect from your device.
+              </h3>
+              <p
+                data-i18n="features.record-component-checks-safety-equipment-and"
+              >
+                Record component checks, safety equipment, and documents. Add
+                photo evidence and observations before departure.
               </p>
             </article>
             <article class="feature-copy">
               <span class="feature-symbol" aria-hidden="true">⌘</span>
-              <h3>Evalúa con criterios claros.</h3>
-              <p>
-                Aplica las reglas de tu empresa para clasificar cada vehículo:
-                habilitado, observado o no habilitado. Detecta riesgos y
-                vencimientos.
+              <h3 data-i18n="features.assess-against-clear-criteria">
+                Assess against clear criteria.
+              </h3>
+              <p data-i18n="features.apply-your-company-s-rules-to">
+                Apply your company’s rules to classify each vehicle as cleared,
+                flagged, or not cleared. Identify risks and expiring documents.
               </p>
             </article>
             <article class="feature-copy">
               <span class="feature-symbol" aria-hidden="true">↗</span>
-              <h3>Da seguimiento hasta el cierre.</h3>
-              <p>
-                Gestiona incidencias, registra reparaciones y acciones
-                correctivas, y conserva el historial preventivo de cada unidad.
+              <h3 data-i18n="features.follow-issues-through-to-resolution">
+                Follow issues through to resolution.
+              </h3>
+              <p data-i18n="features.manage-issues-log-repairs-and-corrective">
+                Manage issues, log repairs and corrective actions, and retain
+                every vehicle’s preventive safety history.
               </p>
             </article>
           </div>
           <figure class="video-shell">
             <div class="demo-bar">
-              <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <div class="window-dots" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
               <span class="demo-label">FLEETSAFE / ABOUT THE PRODUCT</span>
             </div>
             <div class="video-frame" data-video="product">
               <div class="video-placeholder">
                 <span class="video-play" aria-hidden="true">▶</span>
                 <strong>Video About the Product</strong>
-                <span>Muy pronto: FleetSafe en acción, de la inspección al cierre de la incidencia.</span>
+                <span data-i18n="features.coming-soon-fleetsafe-in-action-from"
+                  >Coming soon: FleetSafe in action, from the inspection to the
+                  closing of the incident.</span
+                >
               </div>
             </div>
           </figure>
@@ -575,53 +840,91 @@
       </section>
       <section class="section process" id="how-it-works">
         <div class="wrap">
-          <div class="eyebrow">Del primer chequeo a la próxima ruta</div>
+          <div
+            class="eyebrow"
+            data-i18n="how-it-works.from-the-first-check-to-the"
+          >
+            From the first check to the next journey
+          </div>
           <div class="section-head">
-            <h2>Tres pasos.<br />Una salida mejor preparada.</h2>
-            <p>
-              Conecta a quienes inspeccionan con quienes toman las decisiones.
-              Todo dentro del mismo proceso.
+            <h2>
+              <span class="i18n" data-i18n="how-it-works.three-steps"
+                >Three steps.</span
+              ><br /><span
+                class="i18n"
+                data-i18n="how-it-works.a-better-prepared-departure"
+                >A better-prepared departure.</span
+              >
+            </h2>
+            <p
+              data-i18n="how-it-works.connect-the-people-performing-inspections-with"
+            >
+              Connect the people performing inspections with those making
+              decisions. All within one process.
             </p>
           </div>
           <div class="steps">
             <article class="step">
               <span class="step-no">01</span>
-              <h3>Inspecciona.</h3>
-              <p>
-                El conductor revisa la unidad, completa el formulario digital y
-                registra las evidencias y observaciones.
+              <h3 data-i18n="how-it-works.inspect">Inspect.</h3>
+              <p
+                data-i18n="how-it-works.the-driver-checks-the-vehicle-completes"
+              >
+                The driver checks the vehicle, completes the digital form, and
+                records evidence and observations.
               </p>
-              <span class="role">Conductor / Registro</span>
+              <span class="role" data-i18n="how-it-works.driver-reporting"
+                >Driver / Reporting</span
+              >
             </article>
             <article class="step">
               <span class="step-no">02</span>
-              <h3>Evalúa.</h3>
-              <p>
-                FleetSafe contrasta los resultados con las reglas definidas y
-                clasifica el estado preventivo del vehículo.
+              <h3 data-i18n="how-it-works.assess">Assess.</h3>
+              <p
+                data-i18n="how-it-works.fleetsafe-checks-the-results-against-the"
+              >
+                FleetSafe checks the results against the defined rules and
+                classifies the vehicle’s safety status.
               </p>
-              <span class="role">Plataforma / Evaluación</span>
+              <span class="role" data-i18n="how-it-works.platform-assessment"
+                >Platform / Assessment</span
+              >
             </article>
             <article class="step">
               <span class="step-no">03</span>
-              <h3>Decide con información.</h3>
-              <p>
-                El supervisor revisa la habilitación, atiende las incidencias y
-                da seguimiento a las acciones correctivas.
+              <h3 data-i18n="how-it-works.make-informed-decisions">
+                Make informed decisions.
+              </h3>
+              <p
+                data-i18n="how-it-works.the-supervisor-checks-clearance-addresses-issues"
+              >
+                The supervisor checks clearance, addresses issues, and follows
+                up on corrective actions.
               </p>
-              <span class="role">Supervisor / Control</span>
+              <span class="role" data-i18n="how-it-works.supervisor-oversight"
+                >Supervisor / Oversight</span
+              >
             </article>
           </div>
           <div class="process-bottom">
             <span
-              >La prevención deja de ser un trámite.
-              <strong>Se convierte en parte de tu operación.</strong></span
+              ><span
+                class="i18n"
+                data-i18n="how-it-works.prevention-becomes-more-than-a-formality"
+                >Prevention becomes more than a formality.</span
+              >
+              <strong data-i18n="how-it-works.it-becomes-part-of-your-operation"
+                >It becomes part of your operation.</strong
+              ></span
             ><a
-              data-app-link
+              data-app-link=""
               href="#demo"
               class="text-link"
               style="border-color: #9aae9f; color: #d5ed99"
-              >Explora un ejemplo <span aria-hidden="true">↗</span></a
+              ><span class="i18n" data-i18n="how-it-works.explore-an-example"
+                >Explore an example</span
+              >
+              <span aria-hidden="true">↗</span></a
             >
           </div>
         </div>
@@ -629,23 +932,43 @@
       <section class="section">
         <div class="wrap roles">
           <div>
-            <div class="eyebrow">Cada persona, su perspectiva</div>
-            <h2>Un mismo control.<br />Tres formas de<br />hacerlo posible.</h2>
-            <p>
-              Información compartida y responsabilidades claras para que cada
-              parte del equipo sepa qué hacer.
+            <div
+              class="eyebrow"
+              data-i18n="main.every-person-their-perspective"
+            >
+              Every person, their perspective
+            </div>
+            <h2>
+              <span class="i18n" data-i18n="main.one-shared-view"
+                >One shared view.</span
+              ><br /><span class="i18n" data-i18n="main.three-ways-to"
+                >Three ways to</span
+              ><br /><span class="i18n" data-i18n="main.make-it-happen"
+                >make it happen.</span
+              >
+            </h2>
+            <p
+              data-i18n="main.shared-information-and-clear-responsibilities-so"
+            >
+              Shared information and clear responsibilities so everyone on the
+              team knows what to do.
             </p>
             <figure class="people-photo">
               <img
                 src="./assets/images/photos/driver-inspection.webp"
                 width="1000"
                 height="667"
-                alt="Conductor con un dispositivo digital junto a un camión durante una revisión previa a la salida"
+                alt="Driver using a digital device beside a truck during a pre-trip inspection"
                 loading="lazy"
                 decoding="async"
+                data-i18n-alt="main.driver-using-a-digital-device-beside"
               />
               <figcaption>
-                EL CONTROL EMPIEZA CON QUIEN ESTÁ AL VOLANTE.<br />
+                <span
+                  class="i18n"
+                  data-i18n="main.control-starts-with-the-person-behind"
+                  >CONTROL STARTS WITH THE PERSON BEHIND THE WHEEL.</span
+                ><br />
               </figcaption>
             </figure>
           </div>
@@ -653,31 +976,34 @@
             <article class="role-row">
               <span class="role-icon">01</span>
               <div>
-                <h3>Conductores</h3>
-                <p>
-                  Realizan las inspecciones preoperacionales, adjuntan
-                  evidencias y consultan el estado de su unidad antes de iniciar
-                  ruta.
+                <h3 data-i18n="main.drivers">Drivers</h3>
+                <p
+                  data-i18n="main.perform-pre-trip-inspections-attach-evidence"
+                >
+                  Perform pre-trip inspections, attach evidence, and check their
+                  vehicle’s status before starting a journey.
                 </p>
               </div>
             </article>
             <article class="role-row">
               <span class="role-icon">02</span>
               <div>
-                <h3>Supervisores de flota</h3>
-                <p>
-                  Revisan inspecciones, gestionan incidencias mecánicas y
-                  verifican la habilitación operativa de los vehículos.
+                <h3 data-i18n="main.fleet-supervisors">Fleet supervisors</h3>
+                <p
+                  data-i18n="main.review-inspections-manage-mechanical-issues-and"
+                >
+                  Review inspections, manage mechanical issues, and verify
+                  vehicles’ operational clearance.
                 </p>
               </div>
             </article>
             <article class="role-row">
               <span class="role-icon">03</span>
               <div>
-                <h3>Administradores</h3>
-                <p>
-                  Gestionan usuarios, definen las reglas de evaluación y
-                  administran el registro global de vehículos.
+                <h3 data-i18n="main.administrators">Administrators</h3>
+                <p data-i18n="main.manage-users-define-assessment-rules-and">
+                  Manage users, define assessment rules, and maintain the
+                  overall vehicle registry.
                 </p>
               </div>
             </article>
@@ -687,17 +1013,20 @@
       <section class="section team-section" id="team">
         <div class="wrap">
           <div class="team-head">
-            <div class="eyebrow">El equipo detrás de FleetSafe</div>
+            <div class="eyebrow" data-i18n="team.the-team-behind-fleetsafe">
+              The team behind FleetSafe
+            </div>
             <div class="section-head">
               <h2>
-                Ingeniería con un propósito.<br /><span class="muted"
-                  >Somos BitMeisters.</span
+                <span class="i18n" data-i18n="team.engineering-with-a-purpose"
+                  >Engineering with a purpose.</span
+                ><br /><span class="muted" data-i18n="team.we-are-bitmeisters"
+                  >We are BitMeisters.</span
                 >
               </h2>
-              <p>
-                Un equipo de Ingeniería de Software de la UPC que transforma el
-                control preventivo vehicular en una experiencia digital más
-                clara.
+              <p data-i18n="team.a-software-engineering-team-from-upc">
+                A Software Engineering team from UPC turning preventive vehicle
+                safety management into a clearer digital experience.
               </p>
             </div>
           </div>
@@ -712,7 +1041,7 @@
                 />
               </div>
               <h3>Gerardo Valentin<br />Palacin Lazo</h3>
-              <p>Ingeniería de Software</p>
+              <p data-i18n="team.software-engineering">Software Engineering</p>
             </article>
             <article class="person">
               <div class="avatar">
@@ -724,7 +1053,7 @@
                 />
               </div>
               <h3>Rodrigo Fabrizio<br />Aguilar Untiveros</h3>
-              <p>Ingeniería de Software</p>
+              <p data-i18n="team.software-engineering">Software Engineering</p>
             </article>
             <article class="person">
               <div class="avatar">
@@ -736,7 +1065,7 @@
                 />
               </div>
               <h3>Elizabeth Noelia<br />Apaza Bocanegra</h3>
-              <p>Ingeniería de Software</p>
+              <p data-i18n="team.software-engineering">Software Engineering</p>
             </article>
             <article class="person">
               <div class="avatar">
@@ -748,7 +1077,7 @@
                 />
               </div>
               <h3>Alejandro<br />Espino Flores</h3>
-              <p>Ingeniería de Software</p>
+              <p data-i18n="team.software-engineering">Software Engineering</p>
             </article>
             <article class="person">
               <div class="avatar">
@@ -760,19 +1089,24 @@
                 />
               </div>
               <h3>Juan Manuel<br />Santos Torres</h3>
-              <p>Ingeniería de Software</p>
+              <p data-i18n="team.software-engineering">Software Engineering</p>
             </article>
           </div>
           <figure class="video-shell">
             <div class="demo-bar">
-              <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <div class="window-dots" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
               <span class="demo-label">BITMEISTERS / ABOUT THE TEAM</span>
             </div>
             <div class="video-frame" data-video="team">
               <div class="video-placeholder">
                 <span class="video-play" aria-hidden="true">▶</span>
                 <strong>Video About the Team</strong>
-                <span>Muy pronto: cómo trabajamos y qué aprendimos construyendo FleetSafe.</span>
+                <span data-i18n="team.coming-soon-how-we-work-and"
+                  >Coming soon: how we work and what we learned building
+                  FleetSafe.</span
+                >
               </div>
             </div>
           </figure>
@@ -781,44 +1115,58 @@
       <section class="section faq-section">
         <div class="wrap faq-grid">
           <div>
-            <div class="eyebrow">Antes de empezar</div>
-            <h2>Menos dudas.<br />Más claridad.</h2>
+            <div class="eyebrow" data-i18n="main.before-you-start">
+              Before you start
+            </div>
+            <h2>
+              <span class="i18n" data-i18n="main.fewer-questions"
+                >Fewer questions.</span
+              ><br /><span class="i18n" data-i18n="main.more-clarity"
+                >More clarity.</span
+              >
+            </h2>
           </div>
           <div>
             <details>
-              <summary>¿Para qué tipo de operación está pensado?</summary>
-              <p>
-                FleetSafe está orientado a empresas de transporte de carga que
-                necesitan centralizar sus inspecciones preoperacionales, evaluar
-                la condición de sus vehículos y gestionar incidencias antes de
-                cada operación.
+              <summary data-i18n="main.what-type-of-operation-is-it">
+                What type of operation is it designed for?
+              </summary>
+              <p data-i18n="main.fleetsafe-is-designed-for-freight-transport">
+                FleetSafe is designed for freight transport companies that need
+                to centralize pre-trip inspections, assess vehicle conditions,
+                and manage issues before each operation.
               </p>
             </details>
             <details>
-              <summary>¿Qué determina si un vehículo está habilitado?</summary>
-              <p>
-                Los resultados de la inspección se contrastan con las reglas de
-                evaluación definidas por la empresa. Según esas condiciones, el
-                vehículo queda habilitado, observado o no habilitado. El
-                supervisor puede consultar el resultado y gestionar las
-                incidencias reportadas.
+              <summary data-i18n="main.what-determines-whether-a-vehicle-is">
+                What determines whether a vehicle is cleared?
+              </summary>
+              <p data-i18n="main.inspection-results-are-checked-against-the">
+                Inspection results are checked against the company’s assessment
+                rules. Based on these conditions, a vehicle is classified as
+                cleared, flagged, or not cleared. The supervisor can review the
+                result and manage reported issues.
               </p>
             </details>
             <details>
-              <summary>¿Los conductores pueden usar su celular?</summary>
-              <p>
-                Los formularios están planteados para dispositivos móviles:
-                permiten registrar la revisión, añadir observaciones y adjuntar
-                evidencias fotográficas desde el dispositivo del conductor.
+              <summary data-i18n="main.can-drivers-use-their-phones">
+                Can drivers use their phones?
+              </summary>
+              <p data-i18n="main.the-forms-are-designed-for-mobile">
+                The forms are designed for mobile devices: drivers can record
+                inspections, add observations, and attach photo evidence from
+                their own device.
               </p>
             </details>
             <details>
-              <summary>¿Esta demo guarda datos de mi empresa?</summary>
-              <p>
-                No. Esta página incluye una demostración con información
-                ficticia para mostrar el flujo de FleetSafe. Los filtros y las
-                inspecciones funcionan en tu navegador; no crean cuentas ni
-                envían información.
+              <summary data-i18n="main.does-this-demo-store-my-company">
+                Does this demo store my company’s data?
+              </summary>
+              <p data-i18n="main.no-this-page-includes-a-demo">
+                No. This page includes a demo with fictional information to
+                illustrate the FleetSafe workflow. Filters and inspections run
+                in your browser; they do not create accounts or send
+                information.
               </p>
             </details>
           </div>
@@ -827,18 +1175,30 @@
       <section class="cta">
         <div class="wrap cta-inner">
           <div>
-            <h2>La próxima salida<br />empieza con una buena decisión.</h2>
-            <p>
-              Dale a tu equipo la visibilidad que necesita para inspeccionar,
-              evaluar y actuar antes de poner la flota en marcha.
+            <h2>
+              <span class="i18n" data-i18n="main.the-next-departure"
+                >The next departure</span
+              ><br /><span
+                class="i18n"
+                data-i18n="main.starts-with-a-good-decision"
+                >starts with a good decision.</span
+              >
+            </h2>
+            <p data-i18n="main.give-your-team-the-visibility-they">
+              Give your team the visibility they need to inspect, assess, and
+              act before your fleet hits the road.
             </p>
           </div>
           <div class="cta-action">
-            <a class="btn dark" data-app-link href="#demo"
-              >Conoce FleetSafe
+            <a class="btn dark" data-app-link="" href="#demo"
+              ><span class="i18n" data-i18n="main.discover-fleetsafe"
+                >Discover FleetSafe</span
+              >
               <span class="arrow" aria-hidden="true">↗</span></a
             >
-            <p>Explora la demo interactiva.</p>
+            <p data-i18n="main.explore-the-interactive-demo">
+              Explore the interactive demo.
+            </p>
           </div>
         </div>
       </section>
@@ -850,38 +1210,61 @@
             <a class="logo" href="#"
               ><span class="logo-mark" aria-hidden="true">F</span>FleetSafe.</a
             >
-            <p>La seguridad empieza antes de arrancar.</p>
+            <p data-i18n="footer.safety-starts-before-you-hit-the">
+              Safety starts before you hit the road.
+            </p>
           </div>
-          <nav class="footer-links" aria-label="Navegación del pie">
-            <a href="#features">Plataforma</a
-            ><a href="#how-it-works">Cómo funciona</a
+          <nav
+            class="footer-links"
+            aria-label="Footer navigation"
+            data-i18n-aria-label="nav.footer-navigation"
+          >
+            <a href="#features" data-i18n="nav.platform">Platform</a
+            ><a href="#how-it-works" data-i18n="navigation.how-it-works"
+              >How it works</a
             ><a href="#team">BitMeisters</a>
           </nav>
         </div>
         <div class="footer-bottom">
-          <span>© 2026 BitMeisters. Todos los derechos reservados.</span
-          ><span>INGENIERÍA DE SOFTWARE / UPC</span>
+          <span data-i18n="footer.2026-bitmeisters-all-rights-reserved"
+            >© 2026 BitMeisters. All rights reserved.</span
+          ><span data-i18n="footer.software-engineering-upc"
+            >SOFTWARE ENGINEERING / UPC</span
+          >
         </div>
       </div>
     </footer>
     <dialog id="inspection-dialog" aria-labelledby="inspection-title">
       <div class="dialog-inner">
         <div class="dialog-top">
-          <span class="eyebrow">Inspección de ejemplo</span
-          ><button class="close" type="button" aria-label="Cerrar inspección">
+          <span class="eyebrow" data-i18n="inspection-dialog.sample-inspection"
+            >Sample inspection</span
+          ><button
+            class="close"
+            type="button"
+            aria-label="Close inspection"
+            data-i18n-aria-label="inspection-dialog.close-inspection"
+          >
             ×
           </button>
         </div>
-        <h2 id="inspection-title">Unidad FS-024</h2>
+        <h2 id="inspection-title" data-i18n="inspection-title.vehicle-fs-024">
+          Vehicle FS-024
+        </h2>
         <p id="inspection-description"></p>
         <div id="inspection-status"></div>
         <ul class="inspection-list" id="inspection-checks"></ul>
         <p class="dialog-note" id="inspection-note"></p>
         <button class="btn dark" type="button" id="close-detail">
-          Volver al panel <span aria-hidden="true">↗</span>
+          <span class="i18n" data-i18n="close-detail.back-to-dashboard"
+            >Back to dashboard</span
+          >
+          <span aria-hidden="true">↗</span>
         </button>
       </div>
     </dialog>
+    <script src="./assets/i18n/en-US.js"></script>
+    <script src="./assets/i18n/es-419.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
