@@ -4,6 +4,7 @@
   --muted: #5b6863;
   --line: #d8dcd3;
   --orange: #dd471a;
+  --orange-text: #c43d17;
   --lime: #d5ed99;
   --dark: #142b28;
   --white: #fff;
@@ -115,7 +116,7 @@ summary:focus-visible {
   justify-content: center;
   gap: 25px;
   border: 1px solid transparent;
-  background: var(--orange);
+  background: var(--orange-text);
   color: white;
   padding: 18px 24px;
   font-size: 14px;
@@ -126,7 +127,7 @@ summary:focus-visible {
     transform 0.2s;
 }
 .btn:hover {
-  background: #bf3811;
+  background: #a93412;
   transform: translateY(-2px);
 }
 .btn.small {
@@ -370,7 +371,7 @@ summary:focus-visible {
 }
 .hero-bottom span:not(.i18n) {
   font: 11px monospace;
-  color: var(--orange);
+  color: var(--orange-text);
 }
 .section {
   padding: 105px 0;
@@ -413,7 +414,7 @@ h2 .muted {
 }
 .number {
   font: 12px monospace;
-  color: var(--orange);
+  color: var(--orange-text);
 }
 h3 {
   font-size: 21px;
