@@ -1,7 +1,5 @@
 window.FLEETSAFE_I18N = window.FLEETSAFE_I18N || {};
 window.FLEETSAFE_I18N["en-US"] = {
-  "nav.footer-navigation": "Footer navigation",
-  "nav.platform": "Platform",
   "app.braking-system": "Braking system",
   "app.close-menu": "Close menu",
   "app.complete": "Complete",
@@ -119,6 +117,11 @@ window.FLEETSAFE_I18N["en-US"] = {
   "inspection-dialog.close-inspection": "Close inspection",
   "inspection-dialog.sample-inspection": "Sample inspection",
   "inspection-title.vehicle-fs-024": "Vehicle FS-024",
+  "legal.back": "Back to FleetSafe",
+  "legal.language": "Language",
+  "legal.navigation": "Legal pages",
+  "legal.privacy": "Privacy Policy",
+  "legal.terms": "Terms of Use",
   "main.administrators": "Administrators",
   "main.an-informed-decision": "An informed decision.",
   "main.assessment-using-your-rules": "Assessment using your rules",
@@ -197,11 +200,42 @@ window.FLEETSAFE_I18N["en-US"] = {
     "FleetSafe — Safety starts before you hit the road.",
   "meta.fleetsafe-take-control-before-you-hit":
     "FleetSafe | Take control before you hit the road.",
+  "nav.footer-navigation": "Footer navigation",
+  "nav.platform": "Platform",
   "navigation.how-it-works": "How it works",
   "navigation.main-navigation": "Main navigation",
   "navigation.our-team": "Our team",
   "navigation.the-platform": "The platform",
   "page.skip-to-content": "Skip to content",
+  "privacy.section-1.body":
+    "The BitMeisters team is responsible for the information processed by FleetSafe, an academic project of Universidad Peruana de Ciencias Aplicadas.",
+  "privacy.section-1.title": "Who is responsible",
+  "privacy.section-2.body":
+    "The processing of personal data follows Peruvian Law No. 29733, Personal Data Protection Law, and its regulations.",
+  "privacy.section-2.title": "Legal framework",
+  "privacy.section-3.body":
+    "This website has no forms, does not ask for personal data and does not use cookies. It only stores the language you choose in your browser, so that the page opens in that language next time.",
+  "privacy.section-3.title": "This website",
+  "privacy.section-4.body":
+    "The web application processes the account of each user (name, email, role and company) and the operational information of the fleet: inspections, evaluations, authorizations and incidents, including who registered or authorized each action. Passwords are never stored in plain text: only a BCrypt hash is kept.",
+  "privacy.section-4.title": "Data in the platform",
+  "privacy.section-5.body":
+    "The data is used only to provide the preventive control of the fleet and to keep the traceability of each decision. It is not sold nor used for advertising.",
+  "privacy.section-5.title": "Purpose",
+  "privacy.section-6.body":
+    "Access requires signing in, each role only reaches the operations it is allowed, sessions expire, communication travels over HTTPS and each company only sees its own information.",
+  "privacy.section-6.title": "Security",
+  "privacy.section-7.body":
+    "The website and the web application are hosted on GitHub Pages; the platform services and their database, on Microsoft Azure. The videos are embedded from YouTube in its privacy-enhanced mode.",
+  "privacy.section-7.title": "Service providers",
+  "privacy.section-8.body":
+    "You may exercise your rights of access, rectification, cancellation and opposition through the administrator of your company or by contacting the team through its GitHub organization.",
+  "privacy.section-8.title": "Your rights",
+  "privacy.section-9.body":
+    "This policy may change as the project evolves. The date at the top of this page shows the latest version.",
+  "privacy.section-9.title": "Changes",
+  "privacy.title": "Privacy Policy",
+  "privacy.updated": "Last updated: October 26, 2026",
   "problem.01-scattered-information": "01 / SCATTERED INFORMATION",
   "problem.02-undetected-risks": "02 / UNDETECTED RISKS",
   "problem.03-delayed-decisions": "03 / DELAYED DECISIONS",
@@ -243,4 +277,30 @@ window.FLEETSAFE_I18N["en-US"] = {
   "team.software-engineering": "Software Engineering",
   "team.the-team-behind-fleetsafe": "The team behind FleetSafe",
   "team.we-are-bitmeisters": "We are BitMeisters.",
+  "terms.section-1.body":
+    "FleetSafe is an academic project developed by the BitMeisters team for the course Open Source Application Development (1ASI0729) of the Software Engineering program at Universidad Peruana de Ciencias Aplicadas. It is a prototype for learning and demonstration purposes, not a commercial service.",
+  "terms.section-1.title": "About FleetSafe",
+  "terms.section-2.body":
+    "By using this website or the FleetSafe web application you accept these terms. If you do not agree with them, please do not use the platform.",
+  "terms.section-2.title": "Acceptance",
+  "terms.section-3.body":
+    "Accounts are created by the administrator of each company. Each user keeps their password confidential, uses the platform only for the preventive control of the fleet of their company and registers truthful information in inspections, evaluations and incidents.",
+  "terms.section-3.title": "Accounts and responsible use",
+  "terms.section-4.body":
+    "FleetSafe supports the decision of whether a vehicle may operate, based on the rules configured by each company. It does not replace the judgment of the people in charge nor the obligations that the regulations impose on transport companies. When a supervisor lifts a block, the platform records who authorized it and why.",
+  "terms.section-4.title": "Scope of the assessments",
+  "terms.section-5.body":
+    "The team develops FleetSafe following the Software Engineering Code of Ethics and Professional Practice of ACM and IEEE-CS and the Code of Ethics of the Colegio de Ingenieros del Perú: acting in the public interest, being honest about what the product does and protecting the information entrusted to it.",
+  "terms.section-5.title": "Professional ethics",
+  "terms.section-6.body":
+    "The source code of FleetSafe is published in the public GitHub organization of the team, under the license indicated in each repository.",
+  "terms.section-6.title": "Source code",
+  "terms.section-7.body":
+    "The platform is provided as is, as an academic prototype. The vehicles and inspections shown on this website are fictional examples.",
+  "terms.section-7.title": "Limitation of liability",
+  "terms.section-8.body":
+    "These terms may change as the project evolves. The date at the top of this page shows the latest version.",
+  "terms.section-8.title": "Changes",
+  "terms.title": "Terms of Use",
+  "terms.updated": "Last updated: October 26, 2026",
 };
